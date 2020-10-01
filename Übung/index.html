@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Strukturierte Seite Uebung">
+    <title>Strukturieren</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="aktuell">Home</a></li>
+            </ul>
+        </nav>
+        <h1>Übung zu strukturierten Internetseiten.</h1>
+    </header>
+    <main>
+        <h2>Eingefügtes Video und Bild</h2>
+        <article>  
+            <section>
+                <p> Ein Schnappschuss von meiner Katze.</p>
+                    <image src="media/cat.png" alt="Gaehnende Katze">
+                </section>
+            <section>
+                <p>Leider hab ich noch kein Video von der Katze, aber das kommt bestimmt noch irgendwann.</p>
+                <video src="media/videofolgt.mp4" width="500" controls muted>
+                Leider unterstützt Ihr Browser das video-Element nicht. Sie können das <a href="media/videofolgt.mp4">Video auch herunterladen</a>
+                </video>   
+            </section>
+        </article>
+
+        <h3>Verlinkung von einem Youtube Video</h3>
+        <article>
+                <p>Ich habe kein Youtube-Video von meiner Katze, aber das hier ist ziemlich gut
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a_IA-8nQ4FY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </article>
+
+        <h4><strong>Kameraausrüstung</strong></h4>
+        <P>In dieser Liste ist aufgezählt (mit Verlinkungen), welche Fotoausrüstung ich benutze</P>
+        <article>         
+            <dl>
+                <details>
+                    <summary><strong>Kameramodell</strong></summary>
+                    <li>
+                        <a href="https://www.sony.at/electronics/wechselobjektivkameras/ilce-7m3-body-kit">Sony Alpha 7 Mark III</a>
+                    </li>
+                    <image src="media/sonyalphaa7.PNG" alt="Kameramodell"></image>
+                </details>
+
+                <details>
+                    <summary><strong>Objektiv</strong></summary>
+                    <li>
+                        <a href="https://www.sony.at/electronics/kamera-objektive/sel2870">FE 28–70 mm F 3,5–5,6 OSS</a>
+                    </li>
+                    <image src="media/objektiv.PNG" alt="Kameraobjektiv"></image>
+                </details>
+
+                <details>
+                    <summary><strong>Objektiv-Filter</strong></summary>
+                    <li>
+                        <a href="https://www.hartlauer.at/Foto/Zubehoer-Foto/Filter-Linsen-Konverter/Hoya-UV-HD-55mm-Slim.html">Hoya UV HD 55mm Slim</a>
+                    </li>
+                    <image src="media/filter.PNG" alt="Objektiv-Filter"></image>
+                </details>
+            </dl>
+        </article>
+
+        <P><strong>Hier ist noch ein super gutes Lied: NEFFEX - Closer to Heaven</strong></P>
+        <audio controls="controls">
+            <source src="media/NEFFEX.mp3" type="audio/mp3">
+        </audio>
+
+    </main>
+
+    <footer>
+        This was made by LukasZhy
+    </footer>
+</body>
+</html>
